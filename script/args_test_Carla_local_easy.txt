@@ -1,7 +1,7 @@
 --encoder densenet161_bts
---data_path /media/whn/新加卷/dataset/carla/Data/test_middle/rgb
+--data_path /media/whn/新加卷/dataset/carla/Data/test_easy/rgb
 --dataset Carla
---filenames_file /media/whn/新加卷/dataset/carla/Data/Carla_testmid_files_with_gt.txt
+--filenames_file /media/whn/新加卷/dataset/carla/Data/Carla_testeasy_files_with_gt.txt
 --model_name bts_carla
 --checkpoint_path /home/whn/PycharmProjects/DepthPrediction/bts/results/bts_carla/model-13800-best_abs_rel_0.06504.pt
 --input_height 576
