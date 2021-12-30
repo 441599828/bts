@@ -1,0 +1,31 @@
+--multiprocessing_distributed
+--mode train
+--model_name bts_carla
+--encoder densenet161_bts
+--dataset Carla
+--data_path /home/whn/data/dataset/carla/Data/train/rgb
+--gt_path /home/whn/data/dataset/carla/Data/train/depth
+--filenames_file /home/whn/data/dataset/carla/Data/Carla_train_files_with_gt.txt
+--input_height 576
+--input_width 1024
+--max_depth 235.0
+--log_directory ../results/
+--log_freq 300
+--save_freq 300
+--weight_decay 1e-2
+--adam_eps 1e-3
+--batch_size 12
+--num_epochs 80
+--learning_rate 3e-4
+--do_random_rotate
+--degree 1.0
+--num_threads 11
+--dist_url tcp://127.0.0.1:2345
+--do_online_eval
+--data_path_eval /home/whn/data/dataset/carla/Data/val/rgb
+--gt_path_eval /home/whn/data/dataset/carla/Data/val/depth
+--filenames_file_eval /home/whn/data/dataset/carla/Data/Carla_val_files_with_gt.txt
+--min_depth_eval 0.6
+--max_depth_eval 235.0
+--eval_freq 300
+--eval_summary_directory ./results/eval/
