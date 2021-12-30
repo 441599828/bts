@@ -1,0 +1,9 @@
+--encoder densenet161_bts
+--data_path /media/whn/新加卷/dataset/carla/Data/test_middle/rgb
+--dataset Carla
+--filenames_file /media/whn/新加卷/dataset/carla/Data/Carla_testmid_files_with_gt.txt
+--model_name bts_eigen_v2_pytorch_densenet161
+--checkpoint_path /home/whn/PycharmProjects/DepthPrediction/bts/script/models/bts_eigen_v2_pytorch_densenet161/model
+--input_height 576
+--input_width 1024
+--max_depth 235.0
